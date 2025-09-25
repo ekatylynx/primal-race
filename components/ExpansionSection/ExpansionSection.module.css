@@ -1,0 +1,98 @@
+.expansion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 170px;
+	background-image: url('/primal-race-word.svg');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.video {
+	width: clamp(320px, 82.2%, 1062px);
+	height: 647px;
+	background: #181818;
+	border-radius: 16px;
+	margin-top: 76px;
+}
+
+.subtitle {
+	position: relative;
+}
+
+.subtitle::before {
+	content: '';
+	position: absolute;
+	left: -48px;
+	top: 50%;
+	margin-left: -12px;
+	width: 48px;
+	height: 1px;
+	background: var(--accent-main);
+}
+
+.subtitle::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-left: 12px;
+	width: 48px;
+	height: 1px;
+	background: var(--accent-main);
+}
+
+@media (max-width: 1024px) {
+	.video {
+		height: 400px;
+	}
+}
+
+@media (max-width: 638px) {
+	.expansion {
+		background-image: none;
+		margin-bottom: 100px;
+	}
+	.subtitle {
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.subtitle::before {
+	}
+
+	.title {
+		margin: 0 auto;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.video {
+		height: 300px;
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 418px) {
+	.subtitle {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.subtitle::after {
+		margin-left: 24px;
+	}
+
+	.title {
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.video {
+		height: 200px;
+		margin-top: 30px;
+	}
+}

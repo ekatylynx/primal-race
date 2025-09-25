@@ -1,0 +1,46 @@
+.recap {
+	margin-bottom: 200px;
+}
+
+.text {
+	padding-left: 155px;
+}
+
+.title {
+	width: 660px;
+}
+
+.subtitle {
+	position: relative;
+	margin-left: 58px;
+}
+
+.subtitle::before {
+	content: '';
+	top: 50%;
+	left: -48px;
+	margin-left: -10px;
+	position: absolute;
+	width: 48px;
+	height: 1px;
+	background: var(--accent-main);
+}
+
+@media (max-width: 1024px) {
+	.text {
+		padding-left: 0;
+		padding: 0 50px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.title {
+		width: 100%;
+	}
+}
+
+@media (max-width: 638px) {
+	.text {
+		padding: 0 24px;
+	}
+}

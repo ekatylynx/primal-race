@@ -1,0 +1,151 @@
+.main {
+	width: 100%;
+	height: 1228px;
+	background-image: url('/main-image-2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom 78px left 0px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.info {
+	width: 700px;
+	padding: 118px 0px 0px 155px;
+}
+
+.subtitle {
+	color: #ff5757;
+	font-size: clamp(1rem, 0.5vw + 0.8rem, 1.0625rem);
+	font-weight: 700;
+	font-style: italic;
+	line-height: 140%;
+	text-transform: uppercase;
+	margin-bottom: 21px;
+}
+
+.title {
+	font-size: clamp(2rem, 5vw + 1rem, 4.25rem);
+	line-height: 120%;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: white;
+	margin-bottom: 38px;
+	height: 164px;
+	width: 690px;
+}
+
+.title span {
+	color: #ff5757;
+}
+
+.mainButtons {
+	display: flex;
+	flex-direction: row;
+}
+
+.button {
+	width: 191px;
+	height: 55px;
+	background-color: #ff5757;
+	color: #000;
+	border: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: black;
+}
+
+.button:nth-child(2) {
+	margin-left: 24px;
+}
+
+.buttonGhost {
+	background-color: #000;
+	border: 1px solid #ff5757;
+	color: #ff5757;
+}
+
+.partners {
+	width: clamp(320px, 82.2%, 1184px);
+	height: 35px;
+	position: absolute;
+	bottom: 160px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.icon {
+	display: block;
+	height: 33px;
+	width: 180px;
+}
+
+@media (max-width: 1200px) {
+	.partners {
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 160px;
+		bottom: 0;
+	}
+}
+
+/* Desktop: ≥ 1024px */
+@media (max-width: 1024px) {
+	.main {
+		background-image: none;
+		background-color: black;
+		height: 670px;
+	}
+	.info {
+		width: 100%;
+		padding: 50 50px;
+	}
+	.title {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 68px;
+	}
+	.partners {
+		bottom: 24px;
+	}
+}
+
+@media (max-width: 574px) {
+	.info {
+		padding: 24px;
+		padding-top: 50px;
+	}
+
+	.mainButtons {
+		flex-direction: column;
+	}
+
+	.button:nth-child(2) {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.subtitle {
+		display: block;
+		height: 100%;
+	}
+}
+
+@media (max-width: 470px) {
+	.title {
+		margin-bottom: 50px;
+	}
+	.partners {
+		gap: 10px;
+		bottom: 10px;
+	}
+	.icon {
+		width: 160px;
+		height: 25px;
+	}
+}
