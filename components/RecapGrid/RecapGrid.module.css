@@ -146,6 +146,8 @@
 }
 
 .itemDetails {
+	display: block;
+	margin-top: 8px;
 	color: #fff;
 }
 
