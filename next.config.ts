@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    globalNotFound: true,
+  },
   images: {
     deviceSizes: [
       360, // Very small mobile
