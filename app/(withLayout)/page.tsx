@@ -1,6 +1,8 @@
 import EventRecapSection from '../../components/EventRecapSection/EventRecapSection';
 import EventsSection from '../../components/EventsSection/EventsSection';
 import ExpansionSection from '../../components/ExpansionSection/ExpansionSection';
+import FeedBack from '../../components/FeedBack/FeedBack';
+import ContactInfo from '../../components/ContactInfo/ContactInfo';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -35,6 +37,12 @@ export default function Home() {
 			<EventsSection />
 			<ExpansionSection />
 			<EventRecapSection />
+			<div className='container'>
+			<div className={styles.contacts}>
+					<FeedBack />
+					<ContactInfo />
+				</div>
+			</div>
 		</>
 	);
 }

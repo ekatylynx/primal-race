@@ -92,6 +92,18 @@
 	width: 180px;
 }
 
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 64px;
+	padding: 0 130px;
+	gap: 60px;
+	border-top: 1px solid #363636;
+	border-bottom: 1px solid #363636;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
 @media (max-width: 1200px) {
 	.partners {
 		gap: 20px;
@@ -120,6 +132,14 @@
 	}
 	.partners {
 		bottom: 24px;
+	}
+}
+
+@media (max-width: 840px) {
+	.contacts {
+		padding: 24px;
+		flex-direction: column;
+		gap: 64px;
 	}
 }
 
