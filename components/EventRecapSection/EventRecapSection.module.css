@@ -1,5 +1,5 @@
 .recap {
-	margin-bottom: 200px;
+	margin-bottom: clamp(80px, 13.9vw, 200px);
 }
 
 .text {
