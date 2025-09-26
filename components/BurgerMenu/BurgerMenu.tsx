@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from './BurgerMenu.module.css';
-import Image from 'next/image';
-import Menu from '../../public/menu.svg';
 
 export default function BurgerMenu() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +64,13 @@ export default function BurgerMenu() {
 				aria-label={isOpen ? 'Закрыть меню' : 'Открыть меню'}
 				aria-expanded={isOpen}
 			>
-				<Image src={Menu} alt='Menu Icon' width={62} height={26} />
+				<div>
+					<svg className={styles.menuIcon} width="62" height="26" viewBox="0 0 62 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<rect width="24" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 0 26)" fill="currentColor"/>
+						<rect width="48" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 0 14)" fill="currentColor"/>
+						<rect width="24" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 38 2)" fill="currentColor"/>
+					</svg>
+				</div>
 			</button>
 
 			{/* Background dimming and menu are only rendered when needed */}
