@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header';
-// import Footer from ...;
+import Footer from '../../components/Footer/Footer';
 
 export default function WithLayout({
 	children,
@@ -9,8 +9,8 @@ export default function WithLayout({
 	return (
 		<>
 			<Header />
-			<main>{children}</main>
-			{/* <Footer /> */}
+				<main>{children}</main>
+			<Footer />
 		</>
 	);
 }
